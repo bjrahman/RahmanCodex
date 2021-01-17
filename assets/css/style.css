@@ -100,12 +100,29 @@ fieldset {
   margin-bottom: 40px;
 }
 
+.section-title2 {
+  margin-bottom: 40px;
+}
+
 .section-title h2 {
-  font-size: 12px;
+  font-size: 16px;
   margin-bottom: 10px;
-  font-weight: 200;
+  font-weight: 600;
   margin-top: 0;
-  color: #f1f1f1;
+  color: #000;
+  margin-top: -20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-left: 70px;
+  position: relative;
+}
+
+.section-title2 h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  margin-top: 0;
+  color: #ffffff;
   margin-top: -20px;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -114,6 +131,18 @@ fieldset {
 }
 
 .section-title h2:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: '';
+  background: #fff;
+  height: 1px;
+  width: 50px;
+  margin-left: -70px;
+  margin-top: 7px;
+}
+
+.section-title2 h2:before {
   position: absolute;
   left: 0;
   top: 0;
@@ -741,6 +770,8 @@ fieldset {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     padding:20px;
 }
+
+
 /* 
 .card2{
     background-color:#AEAEAE;
