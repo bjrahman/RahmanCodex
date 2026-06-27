@@ -11,29 +11,34 @@ export const frequencyOptions = [
 
 export type FrequencyId = (typeof frequencyOptions)[number]["id"];
 
-export function estimateQuote(service: Service, bedroomIndex: number, frequencyId: FrequencyId) {
+export function estimateQuote(
+  service: Service,
+  bedroomIndex: number,
+  frequencyId: FrequencyId,
+  extrasTotal = 0
+) {
   switch (service.pricingUnit) {
     case "per hour": {
       const hoursTable = [2, 2.5, 3, 3.5, 4.5];
       const hours = hoursTable[bedroomIndex] ?? hoursTable[hoursTable.length - 1];
       const discount = frequencyOptions.find((f) => f.id === frequencyId)?.discount ?? 0;
-      const price = Math.round(hours * service.pricingFrom * (1 - discount));
+      const price = Math.round(hours * service.pricingFrom * (1 - discount)) + extrasTotal;
       return { price, detail: `Estimated at ~${hours} hours, £${service.pricingFrom}/hr` };
     }
     case "per turnover": {
-      const price = Math.round(service.pricingFrom + bedroomIndex * 15);
+      const price = Math.round(service.pricingFrom + bedroomIndex * 15) + extrasTotal;
       return { price, detail: "Per turnover, based on property size" };
     }
     case "per room from": {
       const rooms = bedroomIndex + 2;
-      const price = Math.round(service.pricingFrom * rooms);
+      const price = Math.round(service.pricingFrom * rooms) + extrasTotal;
       return { price, detail: `Estimated for ${rooms} rooms` };
     }
     case "per month from": {
-      return { price: service.pricingFrom, detail: "Starting price, confirmed after a short site review" };
+      return { price: service.pricingFrom + extrasTotal, detail: "Starting price, confirmed after a short site review" };
     }
     default: {
-      const price = Math.round(service.pricingFrom + bedroomIndex * 25);
+      const price = Math.round(service.pricingFrom + bedroomIndex * 25) + extrasTotal;
       return { price, detail: "Fixed price, confirmed before your booking is locked in" };
     }
   }

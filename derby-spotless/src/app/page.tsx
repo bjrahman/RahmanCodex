@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Hero } from "@/components/sections/Hero";
 import { SocialProofBar } from "@/components/sections/SocialProofBar";
 import { ServicesOverview } from "@/components/sections/ServicesOverview";
+import { WhatsIncluded } from "@/components/sections/WhatsIncluded";
 import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
 import { HowItWorks } from "@/components/sections/HowItWorks";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
@@ -26,6 +27,7 @@ export default function Home() {
       <Hero />
       <SocialProofBar />
       <ServicesOverview />
+      <WhatsIncluded />
       <WhyChooseUs />
       <HowItWorks />
       <TestimonialsSection limit={6} />

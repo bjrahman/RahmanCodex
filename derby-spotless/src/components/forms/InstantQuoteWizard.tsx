@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import { services } from "@/data/services";
 import { serviceIcons } from "@/lib/service-icons";
 import { bedroomOptions, frequencyOptions, estimateQuote, type FrequencyId } from "@/lib/quote";
+import { extras } from "@/data/extras";
 import { site } from "@/data/site";
 
 type Status = "idle" | "submitting" | "success" | "error";
@@ -17,6 +18,7 @@ export function InstantQuoteWizard() {
   const [serviceSlug, setServiceSlug] = useState<string | null>(null);
   const [bedroomIndex, setBedroomIndex] = useState(1);
   const [frequencyId, setFrequencyId] = useState<FrequencyId>("fortnightly");
+  const [selectedExtras, setSelectedExtras] = useState<string[]>([]);
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState<string | null>(null);
 
@@ -27,10 +29,40 @@ export function InstantQuoteWizard() {
 
   const showFrequency = selectedService?.pricingUnit === "per hour";
 
+  const extrasTotal = useMemo(
+    () =>
+      selectedExtras.reduce((total, slug) => {
+        const extra = extras.find((item) => item.slug === slug);
+        return total + (extra?.price ?? 0);
+      }, 0),
+    [selectedExtras]
+  );
+
+  function toggleExtra(slug: string) {
+    setSelectedExtras((current) =>
+      current.includes(slug) ? current.filter((item) => item !== slug) : [...current, slug]
+    );
+  }
+
+  const recurringFrequencyId = frequencyId === "one-off" ? "fortnightly" : frequencyId;
+
+  const oneOffEstimate = useMemo(
+    () => (selectedService ? estimateQuote(selectedService, bedroomIndex, "one-off", extrasTotal) : null),
+    [selectedService, bedroomIndex, extrasTotal]
+  );
+
+  const recurringEstimate = useMemo(
+    () =>
+      selectedService
+        ? estimateQuote(selectedService, bedroomIndex, recurringFrequencyId, extrasTotal)
+        : null,
+    [selectedService, bedroomIndex, recurringFrequencyId, extrasTotal]
+  );
+
   const estimate = useMemo(() => {
     if (!selectedService) return null;
-    return estimateQuote(selectedService, bedroomIndex, showFrequency ? frequencyId : "one-off");
-  }, [selectedService, bedroomIndex, frequencyId, showFrequency]);
+    return estimateQuote(selectedService, bedroomIndex, showFrequency ? frequencyId : "one-off", extrasTotal);
+  }, [selectedService, bedroomIndex, frequencyId, showFrequency, extrasTotal]);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -50,6 +82,7 @@ export function InstantQuoteWizard() {
           serviceSlug: selectedService.slug,
           bedroomLabel: bedroomOptions[bedroomIndex],
           frequency: showFrequency ? frequencyId : null,
+          extras: selectedExtras,
           estimatedPrice: estimate?.price ?? null,
         }),
       });
@@ -180,26 +213,102 @@ export function InstantQuoteWizard() {
             </div>
           </div>
 
-          {showFrequency ? (
-            <div className="mt-6">
-              <p className="text-sm font-semibold text-ink-800">How often?</p>
-              <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-4">
-                {frequencyOptions.map((option) => (
+          <div className="mt-6">
+            <p className="text-sm font-semibold text-ink-800">Choose additional tasks</p>
+            <div className="mt-3 grid grid-cols-3 gap-2 sm:grid-cols-5">
+              {extras.map((extra) => {
+                const isSelected = selectedExtras.includes(extra.slug);
+                return (
                   <button
-                    key={option.id}
+                    key={extra.slug}
                     type="button"
-                    onClick={() => setFrequencyId(option.id)}
+                    onClick={() => toggleExtra(extra.slug)}
                     className={cn(
-                      "rounded-xl border px-3 py-2.5 text-xs font-semibold transition-colors",
-                      frequencyId === option.id
-                        ? "border-brand-400 bg-brand-50 text-brand-700"
-                        : "border-ink-100 text-ink-600 hover:border-brand-200"
+                      "flex flex-col items-center gap-2 rounded-xl border px-2 py-3 text-center transition-colors",
+                      isSelected
+                        ? "border-brand-400 bg-brand-50"
+                        : "border-ink-100 bg-white hover:border-brand-200 hover:bg-ink-50"
                     )}
                   >
-                    {option.label}
-                    {option.discount > 0 ? ` (-${option.discount * 100}%)` : ""}
+                    <extra.icon className={cn("h-5 w-5", isSelected ? "text-brand-600" : "text-ink-400")} />
+                    <span className="text-[11px] font-semibold leading-tight text-ink-700">{extra.label}</span>
+                    <span className="text-[11px] text-ink-400">+£{extra.price}</span>
                   </button>
-                ))}
+                );
+              })}
+            </div>
+          </div>
+
+          {showFrequency ? (
+            <div className="mt-7">
+              <p className="text-sm font-semibold text-ink-800">How often?</p>
+              <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2">
+                <button
+                  type="button"
+                  onClick={() => setFrequencyId("one-off")}
+                  className={cn(
+                    "rounded-xl border p-4 text-left transition-colors",
+                    frequencyId === "one-off"
+                      ? "border-brand-400 bg-brand-50"
+                      : "border-ink-100 bg-white hover:border-brand-200"
+                  )}
+                >
+                  <p className="text-sm font-bold text-ink-950">One-off clean</p>
+                  <p className="mt-1 font-display text-2xl font-bold text-ink-950">
+                    £{oneOffEstimate?.price ?? "—"}
+                  </p>
+                  <ul className="mt-3 space-y-1.5">
+                    {["No commitment", "Pay once, no recurring charge"].map((item) => (
+                      <li key={item} className="flex items-center gap-1.5 text-xs text-ink-500">
+                        <CheckCircle2 className="h-3.5 w-3.5 shrink-0 text-brand-500" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </button>
+
+                <div
+                  className={cn(
+                    "rounded-xl border p-4 text-left transition-colors",
+                    frequencyId !== "one-off" ? "border-brand-400 bg-brand-50" : "border-ink-100 bg-white"
+                  )}
+                >
+                  <button type="button" onClick={() => setFrequencyId(recurringFrequencyId)} className="w-full text-left">
+                    <p className="text-sm font-bold text-ink-950">Recurring clean</p>
+                    <p className="mt-1 font-display text-2xl font-bold text-ink-950">
+                      £{recurringEstimate?.price ?? "—"}
+                    </p>
+                    <ul className="mt-3 space-y-1.5">
+                      {["Save up to 10% per visit", "Same trusted cleaner every time", "Change or cancel anytime"].map(
+                        (item) => (
+                          <li key={item} className="flex items-center gap-1.5 text-xs text-ink-500">
+                            <CheckCircle2 className="h-3.5 w-3.5 shrink-0 text-brand-500" />
+                            {item}
+                          </li>
+                        )
+                      )}
+                    </ul>
+                  </button>
+                  <div className="mt-3 grid grid-cols-3 gap-1.5 border-t border-ink-100 pt-3">
+                    {frequencyOptions
+                      .filter((option) => option.id !== "one-off")
+                      .map((option) => (
+                        <button
+                          key={option.id}
+                          type="button"
+                          onClick={() => setFrequencyId(option.id)}
+                          className={cn(
+                            "rounded-lg border px-2 py-1.5 text-[11px] font-semibold transition-colors",
+                            frequencyId === option.id
+                              ? "border-brand-400 bg-white text-brand-700"
+                              : "border-transparent text-ink-500 hover:border-brand-200"
+                          )}
+                        >
+                          {option.label}
+                        </button>
+                      ))}
+                  </div>
+                </div>
               </div>
             </div>
           ) : null}

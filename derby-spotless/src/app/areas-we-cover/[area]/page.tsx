@@ -9,6 +9,7 @@ import { ReviewStars } from "@/components/ui/ReviewStars";
 import { FaqSection } from "@/components/sections/FaqSection";
 import { CtaBanner } from "@/components/ui/CtaBanner";
 import { JsonLd } from "@/components/ui/JsonLd";
+import { PhotoPlaceholder } from "@/components/ui/PhotoPlaceholder";
 import { areas, getAreaBySlug } from "@/data/areas";
 import { services } from "@/data/services";
 import { serviceIcons } from "@/lib/service-icons";
@@ -112,6 +113,11 @@ export default async function AreaPage({
               <p className="text-xs text-ink-400">available locally</p>
             </div>
           </div>
+          <PhotoPlaceholder
+            label={`Photo: cleaning in ${area.name}`}
+            aspect="wide"
+            className="mt-10"
+          />
         </Container>
       </section>
 

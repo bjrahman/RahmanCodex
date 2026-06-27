@@ -2,6 +2,7 @@ import { Phone, CheckCircle2, Star, CalendarCheck, BadgeCheck } from "lucide-rea
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { TrustBadges } from "@/components/ui/TrustBadges";
+import { PhotoPlaceholder } from "@/components/ui/PhotoPlaceholder";
 import { site } from "@/data/site";
 
 export function Hero() {
@@ -40,7 +41,12 @@ export function Hero() {
         </div>
 
         <div className="relative animate-fade-up [animation-delay:150ms]">
-          <div className="relative mx-auto max-w-sm rounded-3xl border border-ink-100 bg-white p-6 shadow-[var(--shadow-card)]">
+          <PhotoPlaceholder
+            label="Photo: cleaner at work in a Derby home"
+            aspect="wide"
+            className="mx-auto max-w-sm rounded-3xl"
+          />
+          <div className="relative mx-auto mt-5 max-w-sm rounded-3xl border border-ink-100 bg-white p-6 shadow-[var(--shadow-card)]">
             <div className="flex items-center justify-between border-b border-ink-100 pb-4">
               <div>
                 <p className="text-xs font-medium text-ink-400">Your next visit</p>
