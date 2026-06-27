@@ -44,7 +44,7 @@ export function ContactForm() {
         <CheckCircle2 className="h-10 w-10 text-brand-600" />
         <h3 className="mt-4 font-display text-lg font-bold text-ink-950">Message sent</h3>
         <p className="mt-2 max-w-sm text-sm leading-relaxed text-ink-600">
-          Thanks for getting in touch — we aim to respond within 60 minutes during business hours.
+          Thanks for getting in touch. We aim to respond within 60 minutes during business hours.
         </p>
         <button
           type="button"

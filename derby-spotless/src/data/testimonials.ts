@@ -53,7 +53,7 @@ export const testimonials: Testimonial[] = [
     location: "Allestree",
     service: "Regular Domestic Cleaning",
     rating: 5,
-    text: "We've had the same cleaner for over a year now. She knows our home better than we do at this point — it's exactly the consistency we were looking for.",
+    text: "We've had the same cleaner for over a year now. She knows our home better than we do at this point. It's exactly the consistency we were looking for.",
     date: "2026-04-21",
   },
   {

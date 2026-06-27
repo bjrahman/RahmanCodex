@@ -5,7 +5,7 @@ import { site } from "@/data/site";
 
 export function CtaBanner({
   title = "Ready for a home that's always guest-ready?",
-  description = "Get an instant, fixed price online in under two minutes — no phone call, no obligation.",
+  description = "Get an instant, fixed price online in under two minutes. No phone call, no obligation.",
 }: {
   title?: string;
   description?: string;

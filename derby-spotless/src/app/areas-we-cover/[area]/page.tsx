@@ -178,7 +178,7 @@ export default async function AreaPage({
 
       <FaqSection
         faqs={generalFaqs}
-        title={`Frequently asked questions — ${area.name}`}
+        title={`Frequently asked questions for ${area.name}`}
         description="Everything local customers ask before booking. Can't find your answer? Just get in touch."
       />
 

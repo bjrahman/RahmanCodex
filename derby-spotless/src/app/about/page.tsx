@@ -12,7 +12,7 @@ import { site } from "@/data/site";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Derby Spotless was founded to fix what's broken about hiring a cleaner — inconsistent standards, no-shows and zero accountability. Here's how we work, and why it's different.",
+    "Derby Spotless was founded to fix what's broken about hiring a cleaner: inconsistent standards, no-shows and zero accountability. Here's how we work, and why it's different.",
   alternates: { canonical: "/about" },
 };
 
@@ -27,7 +27,7 @@ const values = [
     icon: CalendarClock,
     title: "Your time is the product",
     description:
-      "Every decision we make — fixed windows, online booking, digital invoices — exists to remove friction from your day, not ours.",
+      "Every decision we make, from fixed windows to online booking to digital invoices, exists to remove friction from your day, not ours.",
   },
   {
     icon: ShieldCheck,
@@ -71,15 +71,15 @@ export default function AboutPage() {
           <p className="text-base leading-relaxed text-ink-600">
             Derby Spotless started in {site.founded} after one too many conversations with friends and
             family about cleaners who cancelled last minute, never quite matched the standard they were
-            promised, or left them chasing an invoice that never arrived. None of that was about effort —
-            it was about a complete lack of structure behind most local cleaning services.
+            promised, or left them chasing an invoice that never arrived. None of that was about effort.
+            It was about a complete lack of structure behind most local cleaning services.
           </p>
           <p className="mt-5 text-base leading-relaxed text-ink-600">
             So we built one with structure at the centre: a published cleaning standard for every service,
             DBS-checked and personally interviewed cleaners, fixed arrival windows backed by real
             scheduling software, and online booking and payment so nothing depends on a phone call being
             answered. Today we serve {site.customersServed} customers across Derby and the surrounding
-            suburbs and towns — homeowners, landlords, letting agents, Airbnb hosts and small businesses —
+            suburbs and towns: homeowners, landlords, letting agents, Airbnb hosts and small businesses,
             all on the same standard.
           </p>
           <p className="mt-5 text-base leading-relaxed text-ink-600">
@@ -95,7 +95,7 @@ export default function AboutPage() {
           <SectionHeading
             eyebrow="What we believe"
             title="The principles behind every booking"
-            description="None of this is complicated. It's just rarely done properly in the cleaning industry — so we made it the whole point."
+            description="None of this is complicated. It's just rarely done properly in the cleaning industry. So we made it the whole point."
           />
           <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2">
             {values.map((value) => (

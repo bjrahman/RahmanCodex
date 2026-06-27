@@ -7,7 +7,7 @@ export const generalFaqs = [
   {
     question: "How do I get a price for cleaning?",
     answer:
-      "Use our Instant Quote tool to get a price in under 2 minutes — no phone call required. You can also call or WhatsApp us directly if you'd prefer to talk it through.",
+      "Use our Instant Quote tool to get a price in under 2 minutes. No phone call required. You can also call or WhatsApp us directly if you'd prefer to talk it through.",
   },
   {
     question: "Are your cleaners insured and background checked?",

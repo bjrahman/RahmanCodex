@@ -237,7 +237,7 @@ export function InstantQuoteWizard() {
         <form onSubmit={handleSubmit}>
           <h2 className="font-display text-xl font-bold text-ink-950">Where should we send your quote?</h2>
           <p className="mt-1.5 text-sm text-ink-500">
-            No obligation — we&apos;ll confirm your fixed price and available booking slots.
+            No obligation. We&apos;ll confirm your fixed price and available booking slots.
           </p>
 
           <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">

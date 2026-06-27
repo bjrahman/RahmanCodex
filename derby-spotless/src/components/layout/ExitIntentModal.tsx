@@ -58,7 +58,7 @@ export function ExitIntentModal() {
           <Sparkles className="h-6 w-6 text-brand-600" />
         </div>
         <h3 className="font-display text-2xl font-bold text-ink-950">
-          Before you go — 10% off your first clean
+          Before you go: 10% off your first clean
         </h3>
         <p className="mt-3 text-sm leading-relaxed text-ink-500">
           Get an instant, fixed price for your home or business in under two minutes. New

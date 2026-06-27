@@ -7,7 +7,7 @@ const steps = [
   {
     icon: Search,
     title: "Get your instant quote",
-    description: "Answer a few quick questions about your property and service online — no phone call needed.",
+    description: "Answer a few quick questions about your property and service online. No phone call needed.",
   },
   {
     icon: CalendarCheck2,
@@ -16,7 +16,7 @@ const steps = [
   },
   {
     icon: Sparkles,
-    title: "Relax — we'll take it from here",
+    title: "Relax, we'll take it from here",
     description: "Your vetted cleaner arrives on time, every time, and you get a digital invoice after every visit.",
   },
 ];

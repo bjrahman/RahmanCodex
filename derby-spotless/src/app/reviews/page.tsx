@@ -11,7 +11,7 @@ import { site } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Customer Reviews",
-  description: `Read ${site.reviewCount}+ verified reviews from Derby Spotless customers — homeowners, landlords, letting agents, Airbnb hosts and businesses across Derby.`,
+  description: `Read ${site.reviewCount}+ verified reviews from Derby Spotless customers: homeowners, landlords, letting agents, Airbnb hosts and businesses across Derby.`,
   alternates: { canonical: "/reviews" },
 };
 

@@ -13,7 +13,7 @@ import { site } from "@/data/site";
 export const metadata: Metadata = {
   title: "Cleaning Services in Derby",
   description:
-    "Explore Derby Spotless's full range of premium cleaning services — regular domestic cleaning, deep cleaning, end of tenancy, landlord & Airbnb turnovers, commercial contracts and more.",
+    "Explore Derby Spotless's full range of premium cleaning services: regular domestic cleaning, deep cleaning, end of tenancy, landlord & Airbnb turnovers, commercial contracts and more.",
   alternates: { canonical: "/services" },
 };
 
@@ -31,7 +31,7 @@ export default function ServicesPage() {
           <SectionHeading
             eyebrow="Our services"
             title="A cleaning service for every part of your life"
-            description="Whatever you need cleaned, and whoever you are, there's a Derby Spotless service built around your outcome — not a generic checklist."
+            description="Whatever you need cleaned, and whoever you are, there's a Derby Spotless service built around your outcome, not a generic checklist."
           />
         </Container>
       </section>

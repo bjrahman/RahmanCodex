@@ -56,7 +56,7 @@ export function Hero() {
                 EM
               </div>
               <div>
-                <p className="text-sm font-semibold text-ink-950">Emma — your regular cleaner</p>
+                <p className="text-sm font-semibold text-ink-950">Emma, your regular cleaner</p>
                 <p className="flex items-center gap-1 text-xs text-ink-400">
                   <BadgeCheck className="h-3.5 w-3.5 text-brand-500" /> DBS checked · 4.9★ rated
                 </p>

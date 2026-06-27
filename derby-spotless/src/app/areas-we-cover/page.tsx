@@ -66,7 +66,7 @@ export default function AreasWeCoverPage() {
         </Container>
       </section>
 
-      <CtaBanner title="Don't see your area listed?" description="We're expanding across Derbyshire and Nottinghamshire every month — get in touch and we'll confirm coverage for your postcode." />
+      <CtaBanner title="Don't see your area listed?" description="We're expanding across Derbyshire and Nottinghamshire every month. Get in touch and we'll confirm coverage for your postcode." />
     </>
   );
 }

@@ -28,7 +28,7 @@ export const blogPosts: BlogPost[] = [
       "What does cleaning cost in Derby in 2026? A transparent breakdown of regular, deep and end of tenancy cleaning prices, with the factors that affect your quote.",
     relatedServiceSlug: "regular-domestic-cleaning",
     content: [
-      { type: "p", text: "One of the most common questions we get from Derby homeowners is simple: what does cleaning actually cost? The honest answer is that it depends on a few clear factors — but it shouldn't be a mystery, and it shouldn't take a phone call to find out." },
+      { type: "p", text: "One of the most common questions we get from Derby homeowners is simple: what does cleaning actually cost? The honest answer is that it depends on a few clear factors. It shouldn't be a mystery, and it shouldn't take a phone call to find out." },
       { type: "h2", text: "Typical price ranges in Derby" },
       { type: "ul", items: [
         "Regular domestic cleaning: £22–£28 per hour, with discounts for weekly and fortnightly plans",
@@ -40,7 +40,7 @@ export const blogPosts: BlogPost[] = [
       { type: "h2", text: "What actually changes your price" },
       { type: "p", text: "Property size and number of bedrooms/bathrooms is the biggest factor, followed by how often you book (regular plans are always cheaper per visit than one-offs), and the condition of the property at the first visit. A home that hasn't been deep cleaned in a while will usually need a one-off deep clean before settling into a faster, cheaper regular routine." },
       { type: "h2", text: "Why fixed, transparent pricing matters" },
-      { type: "p", text: "At Derby Spotless, every quote is generated instantly online based on your property and service, and confirmed before any cleaner is booked. No hourly surprises, no last-minute add-on charges — what you're quoted is what you pay, with a digital invoice after every visit." },
+      { type: "p", text: "At Derby Spotless, every quote is generated instantly online based on your property and service, and confirmed before any cleaner is booked. No hourly surprises, no last-minute add-on charges. What you're quoted is what you pay, with a digital invoice after every visit." },
       { type: "p", text: "Want an exact number for your home? Our Instant Quote tool takes under two minutes and gives you a real price, not an estimate range." },
     ],
   },
@@ -56,7 +56,7 @@ export const blogPosts: BlogPost[] = [
       "The full end of tenancy cleaning checklist Derby letting agents use to assess deposit returns, room by room, plus tips to avoid common deductions.",
     relatedServiceSlug: "end-of-tenancy-cleaning",
     content: [
-      { type: "p", text: "Most deposit deductions aren't about damage — they're about cleaning standards that don't match the inventory report from move-in day. Here's the exact checklist Derby letting agents typically work from." },
+      { type: "p", text: "Most deposit deductions aren't about damage. They're about cleaning standards that don't match the inventory report from move-in day. Here's the exact checklist Derby letting agents typically work from." },
       { type: "h2", text: "Kitchen" },
       { type: "ul", items: [
         "Oven, hob and extractor degreased inside and out",
@@ -114,7 +114,7 @@ export const blogPosts: BlogPost[] = [
         "Schedule the next inventory check-in promptly to avoid void period drift",
       ]},
       { type: "h2", text: "Why landlords prefer a consistent cleaning partner" },
-      { type: "p", text: "Landlords managing multiple properties across Derby benefit most from a single, consistent cleaning standard and one point of contact for scheduling and invoicing — rather than juggling different cleaners for every property. Our Landlord & Property Cleaning service is built specifically around this, with consolidated invoicing for portfolios of any size." },
+      { type: "p", text: "Landlords managing multiple properties across Derby benefit most from a single, consistent cleaning standard and one point of contact for scheduling and invoicing, rather than juggling different cleaners for every property. Our Landlord & Property Cleaning service is built specifically around this, with consolidated invoicing for portfolios of any size." },
     ],
   },
   {
@@ -129,7 +129,7 @@ export const blogPosts: BlogPost[] = [
       "A practical guide to Airbnb turnover cleaning for Derby hosts, covering same-day changeovers, staging, restocking and protecting your guest ratings.",
     relatedServiceSlug: "airbnb-holiday-let-cleaning",
     content: [
-      { type: "p", text: "Cleanliness is consistently the single biggest driver of guest review scores. For Derby hosts juggling tight changeover windows, having a dependable turnover cleaning process isn't optional — it's the foundation of a profitable listing." },
+      { type: "p", text: "Cleanliness is consistently the single biggest driver of guest review scores. For Derby hosts juggling tight changeover windows, having a dependable turnover cleaning process isn't optional. It's the foundation of a profitable listing." },
       { type: "h2", text: "What guests actually notice" },
       { type: "ul", items: [
         "Fresh linen, hospital-corner bed making and hotel-style towel folding",
@@ -138,7 +138,7 @@ export const blogPosts: BlogPost[] = [
         "No lingering odours, especially in properties with pets allowed",
       ]},
       { type: "h2", text: "Building a same-day turnover process" },
-      { type: "p", text: "The key to reliable same-day turnovers is having a fixed checklist your cleaning team follows regardless of how tight the window is, plus a clear sign-off step before the next guest's check-in. Photo confirmation on completion removes the guesswork entirely — you know the property is ready before your guest even arrives." },
+      { type: "p", text: "The key to reliable same-day turnovers is having a fixed checklist your cleaning team follows regardless of how tight the window is, plus a clear sign-off step before the next guest's check-in. Photo confirmation on completion removes the guesswork entirely. You know the property is ready before your guest even arrives." },
       { type: "h2", text: "Managing multiple properties" },
       { type: "p", text: "Hosts with more than one listing benefit hugely from a single cleaning partner who can sync with all their booking calendars and provide consolidated monthly invoicing, rather than coordinating separate cleaners property by property." },
       { type: "p", text: "Our Airbnb & Holiday Let Cleaning service covers same-day turnovers seven days a week across Derby, with calendar syncing and photo confirmation built in as standard." },
@@ -170,7 +170,7 @@ export const blogPosts: BlogPost[] = [
         "Keep digital invoices from both cleans in case either is needed for deposit or dispute purposes",
       ]},
       { type: "h2", text: "Why a clean start matters" },
-      { type: "p", text: "Starting in a genuinely deep-cleaned home — not just one that looks tidy after a quick once-over from the previous owner — makes a real difference to how settled a new home feels in the first few weeks. It also means your first regular cleaning visit starts from a proper baseline rather than catching up on months of missed detail." },
+      { type: "p", text: "Starting in a genuinely deep-cleaned home, not just one that looks tidy after a quick once-over from the previous owner, makes a real difference to how settled a new home feels in the first few weeks. It also means your first regular cleaning visit starts from a proper baseline rather than catching up on months of missed detail." },
       { type: "p", text: "We offer both end of tenancy cleaning for the property you're leaving and deep cleaning for the one you're moving into, often booked back-to-back around the same moving day." },
     ],
   },

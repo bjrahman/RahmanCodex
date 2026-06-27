@@ -25,7 +25,7 @@ const points = [
     icon: Smartphone,
     title: "Book, pay and manage it all online",
     description:
-      "A modern, technology-led booking process — instant quotes, secure online payments and a digital invoice after every visit.",
+      "A modern, technology-led booking process: instant quotes, secure online payments and a digital invoice after every visit.",
   },
   {
     icon: RotateCcw,
@@ -48,7 +48,7 @@ export function WhyChooseUs() {
         <SectionHeading
           eyebrow="Why Derby Spotless"
           title="Why choose Derby Spotless instead of another cleaner?"
-          description="Less stress, more consistency, and a standard you can actually rely on — not just promises."
+          description="Less stress, more consistency, and a standard you can actually rely on, not just promises."
         />
         <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {points.map((point) => (

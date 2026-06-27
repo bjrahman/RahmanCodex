@@ -10,7 +10,7 @@ import { site } from "@/data/site";
 export const metadata: Metadata = {
   title: "Instant Quote",
   description:
-    "Get an instant, fixed price for cleaning in Derby in under two minutes — no phone call needed. Choose your service, tell us about your property, and get a quote on screen.",
+    "Get an instant, fixed price for cleaning in Derby in under two minutes. No phone call needed. Choose your service, tell us about your property, and get a quote on screen.",
   alternates: { canonical: "/instant-quote" },
 };
 

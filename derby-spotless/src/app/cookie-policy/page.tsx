@@ -45,15 +45,15 @@ export default function CookiePolicyPage() {
             <p className="mt-3">We use the following categories of cookies on our website:</p>
             <ul className="mt-3 list-disc space-y-2 pl-5">
               <li>
-                <span className="font-semibold text-ink-800">Essential cookies</span> — required for the website
+                <span className="font-semibold text-ink-800">Essential cookies:</span> required for the website
                 and our instant quote tool to work correctly. These cannot be switched off.
               </li>
               <li>
-                <span className="font-semibold text-ink-800">Analytics cookies</span> — help us understand which
+                <span className="font-semibold text-ink-800">Analytics cookies:</span> help us understand which
                 pages are popular and how visitors move through the site, so we can improve the experience.
               </li>
               <li>
-                <span className="font-semibold text-ink-800">Functionality cookies</span> — remember choices
+                <span className="font-semibold text-ink-800">Functionality cookies:</span> remember choices
                 you&apos;ve made, such as form progress in our instant quote tool, to make your next visit
                 smoother.
               </li>

@@ -39,8 +39,8 @@ export const services: Service[] = [
       { value: "60 min", label: "average response time on enquiries" },
     ],
     intro: [
-      "Regular cleaning isn't about ticking boxes — it's about never having to think about cleaning again. Derby Spotless runs a recurring home cleaning service designed for people whose time is worth more than a Saturday morning with a mop.",
-      "You choose the frequency, we match you with a vetted, DBS-checked cleaner, and we hold them to a published standard on every visit. If something's missed, we come back and fix it for free — no awkward conversations required.",
+      "Regular cleaning isn't about ticking boxes. It's about never having to think about cleaning again. Derby Spotless runs a recurring home cleaning service designed for people whose time is worth more than a Saturday morning with a mop.",
+      "You choose the frequency, we match you with a vetted, DBS-checked cleaner, and we hold them to a published standard on every visit. If something's missed, we come back and fix it for free. No awkward conversations required.",
     ],
     included: [
       "Kitchen surfaces, appliances exteriors, hob and sink degreased",
@@ -65,7 +65,7 @@ export const services: Service[] = [
     pricingUnit: "per hour",
     faqs: [
       { question: "Will I get the same cleaner every time?", answer: "Wherever possible, yes. We match you with one dedicated cleaner for ongoing visits, so they learn your home and your preferences. If they're ever off, we send a fully briefed replacement so standards never slip." },
-      { question: "Do I need to provide cleaning products?", answer: "No — our cleaners bring professional-grade, eco-conscious products and equipment as standard. If you'd prefer we use your own products, just let us know when booking." },
+      { question: "Do I need to provide cleaning products?", answer: "No. Our cleaners bring professional-grade, eco-conscious products and equipment as standard. If you'd prefer we use your own products, just let us know when booking." },
       { question: "Can I change my cleaning frequency later?", answer: "Yes. You can move between weekly, fortnightly and monthly cleaning, pause for holidays, or cancel with 48 hours' notice through your online account." },
       { question: "What if I'm not happy with a clean?", answer: "Let us know within 24 hours and we'll return to put it right at no extra cost, no questions asked. That's our satisfaction guarantee." },
     ],
@@ -78,17 +78,17 @@ export const services: Service[] = [
     idealFor: "Spring cleans, big resets & one-off occasions",
     metaTitle: "Deep Cleaning Services Derby | One-Off Deep Clean | Derby Spotless",
     metaDescription:
-      "A top-to-bottom deep clean for Derby homes — ovens, behind appliances, grout, skirting boards and every detail your regular clean doesn't reach. Book online today.",
+      "A top-to-bottom deep clean for Derby homes: ovens, behind appliances, grout, skirting boards and every detail your regular clean doesn't reach. Book online today.",
     heroHeadline: "The reset your home has been waiting for.",
     heroSubheadline:
-      "A meticulous, top-to-bottom deep clean that reaches everything your weekly routine skips — perfect before guests, after illness, or just because.",
+      "A meticulous, top-to-bottom deep clean that reaches everything your weekly routine skips. Perfect before guests, after illness, or just because.",
     outcomeStats: [
       { value: "40+", label: "checklist points covered per visit" },
       { value: "4–8 hrs", label: "average team time on a 3-bed home" },
       { value: "100%", label: "satisfaction guarantee on every deep clean" },
     ],
     intro: [
-      "A deep clean is the difference between a home that looks clean and one that actually is clean. We strip back grease, grime and dust from the places that get missed week to week — skirting boards, behind appliances, extractor fans, light switches, door frames.",
+      "A deep clean is the difference between a home that looks clean and one that actually is clean. We strip back grease, grime and dust from the places that get missed week to week: skirting boards, behind appliances, extractor fans, light switches, door frames.",
       "Most clients book a deep clean as a seasonal reset or before starting a regular plan, so every future visit starts from a genuinely clean baseline.",
     ],
     included: [
@@ -164,7 +164,7 @@ export const services: Service[] = [
     faqs: [
       { question: "Do you guarantee my deposit back?", answer: "We guarantee the clean itself meets letting agent standard, and we'll return free of charge within 72 hours if any cleaning issue is raised. Deposit decisions ultimately sit with your landlord or agent based on the full check-out report, including damage and condition beyond cleaning." },
       { question: "Can you clean on the same day as checkout?", answer: "Yes, this is the most common booking we take. Let us know your exact checkout time and we'll schedule accordingly, including evening and weekend slots." },
-      { question: "Do letting agents in Derby recognise your standard?", answer: "Yes — we work directly with letting agents and property managers across Derby and provide a digital checklist and invoice that can be shared as proof of professional cleaning." },
+      { question: "Do letting agents in Derby recognise your standard?", answer: "Yes. We work directly with letting agents and property managers across Derby and provide a digital checklist and invoice that can be shared as proof of professional cleaning." },
       { question: "What if the property is unfurnished or empty?", answer: "No problem, our checklist and pricing apply equally to furnished and unfurnished properties." },
     ],
     relatedServices: ["landlord-property-cleaning", "deep-cleaning", "carpet-upholstery-cleaning"],
@@ -186,7 +186,7 @@ export const services: Service[] = [
       { value: "Same week", label: "turnaround on most void properties" },
     ],
     intro: [
-      "Managing cleaning across a portfolio of rental properties shouldn't mean juggling multiple cleaners, inconsistent standards and a stack of separate invoices. We work with landlords and letting agents across Derby as a single, consistent cleaning partner — covering everything from one-off void cleans to scheduled communal area visits.",
+      "Managing cleaning across a portfolio of rental properties shouldn't mean juggling multiple cleaners, inconsistent standards and a stack of separate invoices. We work with landlords and letting agents across Derby as a single, consistent cleaning partner, covering everything from one-off void cleans to scheduled communal area visits.",
       "Every property is cleaned to the same published standard with photo confirmation on request, and portfolio clients receive one consolidated invoice each month rather than paperwork per property.",
     ],
     included: [
@@ -263,7 +263,7 @@ export const services: Service[] = [
       { question: "Can you handle same-day turnovers?", answer: "Yes, same-day turnarounds are the core of this service. Tell us your checkout and check-in times and we'll plan around them." },
       { question: "Do you manage multiple properties?", answer: "We work with hosts managing portfolios of properties across Derby, with calendar syncing and consolidated monthly invoicing available." },
       { question: "What happens if a guest leaves the property in poor condition?", answer: "We'll always complete the clean to standard, but where a property requires significantly more time than a standard turnover, we'll contact you before proceeding with any additional charge." },
-      { question: "Can you supply linen and towels?", answer: "We can arrange linen hire and laundering as an add-on service — ask for details when booking." },
+      { question: "Can you supply linen and towels?", answer: "We can arrange linen hire and laundering as an add-on service. Ask for details when booking." },
     ],
     relatedServices: ["regular-domestic-cleaning", "deep-cleaning", "carpet-upholstery-cleaning"],
   },
@@ -333,7 +333,7 @@ export const services: Service[] = [
       { value: "100%", label: "satisfaction guarantee before final sign-off" },
     ],
     intro: [
-      "Construction dust gets everywhere — inside cupboards, on light fittings, deep in carpets and air vents. Standard cleaning doesn't cut it after a renovation, extension or new build. We use specialist equipment and a structured top-down approach to clear it properly, the first time.",
+      "Construction dust gets everywhere: inside cupboards, on light fittings, deep in carpets and air vents. Standard cleaning doesn't cut it after a renovation, extension or new build. We use specialist equipment and a structured top-down approach to clear it properly, the first time.",
       "We work closely with builders, project managers and homeowners to schedule the clean at the right point in your project, so you can move in or hand over without a layer of dust over everything you've just finished.",
     ],
     included: [
@@ -431,7 +431,7 @@ export const services: Service[] = [
       { value: "Family updates", label: "available after every visit" },
     ],
     intro: [
-      "For many elderly homeowners, a cleaner isn't just a convenience — it's the difference between managing comfortably at home and struggling alone. We take extra care matching clients with a consistent, patient and familiar cleaner who understands their routine and pace.",
+      "For many elderly homeowners, a cleaner isn't just a convenience. It's the difference between managing comfortably at home and struggling alone. We take extra care matching clients with a consistent, patient and familiar cleaner who understands their routine and pace.",
       "Family members based elsewhere can request a short update after each visit, and we're always happy to liaise with carers or family on scheduling, access and any special requirements.",
     ],
     included: [

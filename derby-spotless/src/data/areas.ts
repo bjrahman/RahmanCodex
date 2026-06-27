@@ -22,7 +22,7 @@ export const areas: Area[] = [
       "Derby Spotless is Derby's premium cleaning company, covering the city centre and every surrounding suburb with the same trusted, insured standard.",
     intro: [
       "As a Derby-based company, the city centre is where it all started. From apartments overlooking Pride Park to family homes near Markeaton Park and Allestree, our teams cover every corner of Derby with the same fixed standard of cleaning.",
-      "We work with homeowners near the Cathedral Quarter, professionals in the Derbion and Friar Gate area, and landlords managing properties close to the University of Derby — all on the same transparent, online booking system.",
+      "We work with homeowners near the Cathedral Quarter, professionals in the Derbion and Friar Gate area, and landlords managing properties close to the University of Derby, all on the same transparent, online booking system.",
     ],
     landmarks: ["Derby Cathedral", "Pride Park Stadium", "Derbion Shopping Centre", "Markeaton Park", "Derby Silk Mill"],
     responseTime: "under 60 minutes",
@@ -42,7 +42,7 @@ export const areas: Area[] = [
       "Trusted home cleaning in Mickleover, Derby. Same cleaner every visit, fixed arrival windows and a satisfaction guarantee for local families and professionals.",
     intro: [
       "Mickleover's mix of established family homes and newer developments around Western Park makes it one of our most requested suburbs for regular weekly and fortnightly cleaning.",
-      "We know the area well — from the homes near Mickleover Golf Club to the streets surrounding Station Road — and our cleaners are familiar with the parking and access patterns typical of Mickleover properties.",
+      "We know the area well, from the homes near Mickleover Golf Club to the streets surrounding Station Road, and our cleaners are familiar with the parking and access patterns typical of Mickleover properties.",
     ],
     landmarks: ["Western Park", "Mickleover Golf Club", "Mickleover Sports Club", "Station Road"],
     responseTime: "under 60 minutes",
@@ -108,7 +108,7 @@ export const areas: Area[] = [
     responseTime: "under 60 minutes",
     testimonial: {
       name: "Anna R., Spondon",
-      text: "Booked a deep clean before moving in and it was spotless — genuinely impressed by the attention to detail behind appliances and inside cupboards.",
+      text: "Booked a deep clean before moving in and it was spotless. Genuinely impressed by the attention to detail behind appliances and inside cupboards.",
       rating: 5,
     },
   },
@@ -128,7 +128,7 @@ export const areas: Area[] = [
     responseTime: "under 60 minutes",
     testimonial: {
       name: "Helen D., Allestree",
-      text: "We've had the same cleaner for over a year now. She knows our home better than we do at this point — it's exactly the consistency we were looking for.",
+      text: "We've had the same cleaner for over a year now. She knows our home better than we do at this point. It's exactly the consistency we were looking for.",
       rating: 5,
     },
   },
