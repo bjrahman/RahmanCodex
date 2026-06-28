@@ -6,10 +6,14 @@ import { site } from "@/data/site";
 export function CtaBanner({
   title = "Ready for a home that's always guest-ready?",
   description = "Get an instant, fixed price online in under two minutes. No phone call, no obligation.",
+  serviceSlug,
 }: {
   title?: string;
   description?: string;
+  serviceSlug?: string;
 }) {
+  const quoteHref = serviceSlug ? `/instant-quote?service=${serviceSlug}` : "/instant-quote";
+
   return (
     <section className="relative overflow-hidden bg-ink-950 py-16 sm:py-20">
       <div
@@ -29,7 +33,7 @@ export function CtaBanner({
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-lg text-ink-200">{description}</p>
         <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <Button href="/instant-quote" size="lg">
+          <Button href={quoteHref} size="lg">
             Get Instant Quote
           </Button>
           <Button href={site.phoneHref} variant="outline" size="lg" className="border-white/20 bg-white/5 text-white hover:border-brand-400 hover:bg-white/10 hover:text-brand-200">

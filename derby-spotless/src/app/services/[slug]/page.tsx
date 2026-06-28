@@ -83,7 +83,7 @@ export default async function ServicePage({
                 {service.heroSubheadline}
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <Button href="/instant-quote" size="lg">
+                <Button href={`/instant-quote?service=${service.slug}`} size="lg">
                   Get Instant Quote
                   <ArrowRight className="h-4 w-4" />
                 </Button>
@@ -211,7 +211,7 @@ export default async function ServicePage({
         </section>
       ) : null}
 
-      <CtaBanner title={`Ready to book ${service.shortName.toLowerCase()}?`} />
+      <CtaBanner title={`Ready to book ${service.shortName.toLowerCase()}?`} serviceSlug={service.slug} />
     </>
   );
 }
